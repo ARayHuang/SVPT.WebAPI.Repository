@@ -1,0 +1,380 @@
+{
+	"info": {
+		"_postman_id": "532ba951-9f3e-438d-bc33-eb47facfe2b4",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SVTPTasks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/svtp-task",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"svtp-task"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SVTPTask",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/svtp-task/17417016-F6E4-4DB7-86DE-01A941EBD490",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"svtp-task",
+						"17417016-F6E4-4DB7-86DE-01A941EBD490"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SVTPTask",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Project\": \"Opel12\",\r\n    \"PlatformType\": \"NB\",\r\n    \"Phases\": [\"DB\", \"PV\", \"SI\"],\r\n    \"Series\": \"QQ\",\r\n    \"Year\": \"2023\",\r\n    \"Status\": 0,\r\n    \"TaskNotifies\": [\r\n        {\r\n            \"Email\": \"123@hp.com\"\r\n        },\r\n        {\r\n            \"Email\": \"333@hp.com\"\r\n        },\r\n        {\r\n            \"Email\": \"abc@hp.com\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/svtp-task",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"svtp-task"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SVTPTaskItems",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/svtp-task/1646D179-3084-4098-B794-1D11D260D431/items",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"svtp-task",
+						"1646D179-3084-4098-B794-1D11D260D431",
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SVTPTaskItme",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/task-item/73b25239-0eb4-4a6c-811e-050648b06d4d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"task-item",
+						"73b25239-0eb4-4a6c-811e-050648b06d4d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SVTPTaskItem",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"itemIds\": [\r\n        \"73B25239-0EB4-4A6C-811E-050648B06D4D\",\r\n        \"625F63F3-C048-4D5F-B16C-05804207E4BF\",\r\n        \"7B651889-7D66-4BB3-828B-059848B6E528\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/svtp-task/1646D179-3084-4098-B794-1D11D260D431/items",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"svtp-task",
+						"1646D179-3084-4098-B794-1D11D260D431",
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SVTPTaskItem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"itemIds\": [\r\n        \"0FF80DFA-77E2-4DEA-F6E9-08D9938CA3A5\",\r\n        \"B8BB52E1-5EFB-4485-F706-08D9938CA3A5\",\r\n        \"5A6391C1-AEC5-46B2-F718-08D9938CA3A5\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/svtp-task/1646D179-3084-4098-B794-1D11D260D431/items",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"svtp-task",
+						"1646D179-3084-4098-B794-1D11D260D431",
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UploadTestResult",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"type": "file",
+							"src": [
+								"/C:/Users/HuangRay/Documents/work/Docs/SVPT_Test_Result/Opel12/SVTP702_Opel12_DB_CF01 - WLAN Function & LED  Results_NA_Pass_20200615.xlsx",
+								"/C:/Users/HuangRay/Documents/work/Docs/SVPT_Test_Result/Opel12/SVTP702_Opel12_DB_CF01 - WLAN Function & LED  Results_Vendor1_Pass_20200615.xlsx"
+							]
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/test-result",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"test-result"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SVTPTaskItemTestResults",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/task-item/40C1A03B-6498-46CB-91A1-E1F5042575DF/results",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"task-item",
+						"40C1A03B-6498-46CB-91A1-E1F5042575DF",
+						"results"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SVTPTaskItmeTestResult-Schedule",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"StartAt\": \"2021-10-21T17:16:40\",\r\n    \"EndAt\": \"2021-10-30T17:16:40\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/test-result/2EF77A06-683D-4556-8DEA-FFC5334B0028/schedule",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"test-result",
+						"2EF77A06-683D-4556-8DEA-FFC5334B0028",
+						"schedule"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SVTPTaskItemTestResult-waivedOrBlock",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"WaiveOrBlock\": \"Waived\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/test-result/CC095735-FF00-4364-865F-20B5409F651E/waivedorblock",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"test-result",
+						"CC095735-FF00-4364-865F-20B5409F651E",
+						"waivedorblock"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SVTPTaskItemTestResult",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/test-result/CC095735-FF00-4364-865F-20B5409F651E",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"test-result",
+						"CC095735-FF00-4364-865F-20B5409F651E"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SVTPTaskItemTestResultFiles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/test-result/CC095735-FF00-4364-865F-20B5409F651E/file",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"test-result",
+						"CC095735-FF00-4364-865F-20B5409F651E",
+						"file"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DownloadTestResult",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/test-result/CC095735-FF00-4364-865F-20B5409F651E/file/36419C33-E3AB-438B-B119-FA12A212172A",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"test-result",
+						"CC095735-FF00-4364-865F-20B5409F651E",
+						"file",
+						"36419C33-E3AB-438B-B119-FA12A212172A"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
